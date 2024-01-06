@@ -1,0 +1,694 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+body {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.76)),
+    url(./assets/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.271);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6f6f6f;
+}
+
+h1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(177, 108, 234, 1) 0%,
+    rgba(255, 94, 105, 1) 40%,
+    rgba(255, 138, 86, 1) 68%,
+    rgba(255, 168, 75, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* header */
+
+header {
+  font-family: "Bai Jamjuree", sans-serif;
+  height: 5vh;
+  width: 100%;
+  padding: 20px 5%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #2d2d2d38;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+header > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+header > div > h1 {
+  font-size: 95%;
+}
+
+header > div > figure {
+  height: 50px;
+  width: 50px;
+  background: url(./assets/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+header > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+
+header > nav > a {
+  all: unset;
+  color: rgb(154, 154, 154);
+  font-size: 80%;
+  cursor: pointer;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+header > nav > a:hover {
+  color: rgb(213, 212, 212);
+  font-weight: 500;
+}
+
+.navbar-active {
+  color: white;
+  font-weight: 600;
+}
+
+header > button {
+  all: unset;
+  display: none;
+  cursor: pointer;
+}
+
+.bi-list {
+  font-size: 30px;
+}
+
+/* Mobile Menu */
+
+.mobile-menu {
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.28);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.5px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  font-family: "inter", sans-serif;
+}
+
+.mobile-menu > button {
+  all: unset;
+}
+
+.mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 15px;
+}
+
+.mobile-menu a {
+  all: unset;
+  cursor: pointer;
+  color: rgb(162, 162, 162);
+}
+
+.mobile-menu a:hover {
+  color: white;
+}
+
+.bi-x-lg {
+  font-size: 30px;
+}
+
+/* section-1 */
+
+.section-1 {
+  font-family: "Bai Jamjuree", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1 > main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+}
+
+.section-1 > main > figure {
+  height: 300px;
+  width: 300px;
+  background: url(./assets/my-picture.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.section-1 > main > article {
+  font-size: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-1 > main > article > :last-child {
+  background: none;
+  background-clip: unset;
+  -webkit-text-fill-color: white;
+}
+
+/* section-2 */
+
+.section-2 {
+  padding-top: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 60px;
+}
+
+.section-2 > main {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.section-2 > main > article:first-child {
+  width: 40%;
+  line-height: 1.5rem;
+  padding: 20px;
+  text-align: justify;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  background: rgba(48, 48, 48, 0.22);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border: 1px solid rgb(64, 64, 64);
+}
+
+.section-2 > main > article:last-child {
+  height: 100%;
+  width: 60%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.education-container,
+.experience-container {
+  width: 90%;
+}
+
+.section-2 > main > article:last-child > div > button {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: rgba(48, 48, 48, 0.22);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.5px);
+  border: 1px solid rgb(64, 64, 64);
+  height: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.section-2 > main > article:last-child > div > button:hover {
+  background: rgba(48, 48, 48, 0.693);
+}
+
+.education-list-parent {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s ease;
+}
+
+.hidden {
+  height: 0;
+  opacity: 0;
+}
+
+.visible {
+  height: 203px; /* Adjust to the preferred height of the content */
+  opacity: 1;
+}
+
+.edu-list {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  background: rgba(111, 111, 111, 0.22);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(64, 64, 64);
+}
+
+.ums {
+  height: 80px;
+  width: 80px;
+  background: url(./assets/ums.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sdar {
+  height: 80px;
+  width: 80px;
+  background: url(./assets/sdar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.experience-list-parent {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 30px;
+  background: rgba(111, 111, 111, 0.22);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(64, 64, 64);
+}
+
+.exp-list > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.exp-list > div > * > h4 {
+  font-size: 20px;
+}
+
+.exp-list > div > * > h5 {
+  font-size: 15px;
+}
+
+.exp-list > ul {
+  margin-left: 20px;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 1.2rem;
+}
+
+/* section-3 */
+
+.section-3 {
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Styles for Project Showcase */
+.project-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-selection {
+  margin-bottom: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.project-btn {
+  all: unset;
+  width: 80px;
+  font-family: "Bai Jamjuree", sans-serif;
+  margin: 5px;
+  padding: 8px 16px;
+  background: rgba(111, 111, 111, 0.22);
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.project-btn:hover {
+  background: rgba(139, 139, 139, 0.345);
+}
+
+.btn-active {
+  background-color: #7c7c7c;
+}
+
+.project-display {
+  display: flex;
+  width: 1050px;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: auto;
+  position: relative;
+}
+
+.project-slide {
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 960px;
+  height: 600px;
+  overflow-y: scroll;
+}
+
+.project-slide > a > img {
+  width: 950px;
+  height: auto;
+}
+
+.project-descriptions {
+  background: rgba(0, 0, 0, 0.618);
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  position: absolute;
+  width: 950px;
+  height: 110px;
+  z-index: 1;
+  left: 45px;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 3px;
+  font-family: "Inter", sans-serif;
+  text-align: justify;
+  overflow-y: scroll;
+}
+
+.project-descriptions > :first-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-descriptions > :last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.project-descriptions a {
+  font-family: "Roboto", sans-serif;
+  color: rgb(126, 248, 117);
+}
+
+.bi-journal-bookmark {
+  color: rgb(126, 248, 117);
+}
+
+.dot-indicators {
+  margin-top: 10px;
+}
+
+.dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot-active {
+  background-color: #bbb;
+}
+
+.prev-btn,
+.next-btn {
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* section-4 */
+
+.section-4 {
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 80px;
+}
+
+.skills-container {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.skill {
+  font-family: "inter", sans-serif;
+  font-size: 15px;
+  width: 100px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.skill-logo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.skill-logo > img {
+  max-width: 100%;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+}
+
+/* section-5 */
+
+.section-5 {
+  height: 60vh;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  font-family: "Bai Jamjuree";
+}
+
+.contact-container {
+  width: 620px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.platform {
+  width: 300px;
+  height: 100px;
+  background: rgba(111, 111, 111, 0.22);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.bi-linkedin,
+.bi-github,
+.bi-twitter-x,
+.bi-envelope {
+  font-size: 35px;
+}
+
+footer {
+  font-family: "roboto";
+  text-align: center;
+  padding: 30px;
+}
+
+/*  */
+/* Responsive */
+/*  */
+
+@media (max-width: 800px) {
+  .menu-desktop {
+    display: none;
+  }
+
+  #openMenuMobile {
+    display: block;
+  }
+
+  .section {
+    height: auto;
+  }
+
+  .section-1 {
+    padding-top: 80px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .section-2 main {
+    flex-direction: column;
+  }
+
+  .section-2 > main > article:first-child {
+    width: 100%;
+  }
+
+  .section-2 > main > article:last-child {
+    width: 100%;
+  }
+
+  .project-selection {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-display {
+    width: auto;
+  }
+
+  .project-slide {
+    width: 90%;
+    height: 50%;
+  }
+
+  .project-slide > a > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-descriptions {
+    width: 100%;
+    left: 0;
+  }
+}

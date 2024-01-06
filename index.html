@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqif Bashah Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <script src="./script/navBar.js" defer></script>
+    <script src="./script/educationList.js" defer></script>
+    <script src="./script/experienceList.js" defer></script>
+    <script src="./script/projectShowcase.js" defer></script>
+    <script src="./script/mobilemenu.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div>
+        <figure id="logo"></figure>
+        <h1>MUHAMMAD AQIF BASHAH BIN MOHD ZALFA</h1>
+      </div>
+      <nav id="links" class="menu-desktop">
+        <a href="#home" class="link navbar-active">Home</a>
+        <a href="#about" class="link">About</a>
+        <a href="#projects" class="link">Projects</a>
+        <a href="#skills" class="link">Skills</a>
+        <a href="#contact" class="link">Contact</a>
+      </nav>
+      <button id="openMenuMobile"><i class="bi bi-list"></i></button>
+    </header>
+
+    <div id="menuMobileList" class="mobile-menu">
+      <button id="closeMenuMobile"><i class="bi bi-x-lg"></i></button>
+      <h1>Menu</h1>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <!-- section-1 -->
+
+    <section id="home" class="section section-1">
+      <main>
+        <figure id="myPicture"></figure>
+        <article>
+          <h1>Hello, I'm Aqif Bashah,</h1>
+          <h1>passionate about tech and gaming.</h1>
+        </article>
+      </main>
+    </section>
+
+    <!-- section-2 -->
+
+    <section id="about" class="section section-2">
+      <h1>About me</h1>
+      <main>
+        <article>
+          <p>
+            Hello! I'm Muhammad Aqif Bashah bin Mohd Zalfa, a determined
+            individual passionate about technology and its endless
+            possibilities. I proudly hold a bachelor's degree in the captivating
+            realm of Physics with Electronics, where I honed my analytical
+            prowess and problem-solving skills.
+          </p>
+          <p>
+            My journey took an exhilarating turn during my tenure at Seagate,
+            where I delved into the captivating world of web development. The
+            allure of creating immersive digital experiences seized my interest,
+            prompting me to explore the intricacies of HTML, CSS, and JavaScript
+            during my immersive internship
+          </p>
+          <p>
+            Previously, I navigated the dynamic landscape of the oil and gas
+            industry as a meticulous Project Administrator. Here, I cultivated a
+            penchant for precision and efficient management, fortifying my
+            foundation of organizational acumen.
+          </p>
+          <p>
+            Beyond my professional endeavors, gaming fuels my creativity and
+            serves as an outlet for unwinding. I've also embraced the thrilling
+            prospects of Data Science through Python, seeking to harness its
+            power to derive meaningful insights.
+          </p>
+          <p>
+            Now, fueled by my multifaceted experiences, I embark on a
+            captivating journey into the world of web development. Through a
+            fusion of my past ventures and newfound passions, I'm charting a
+            path to weave innovation and creativity into every digital endeavor
+          </p>
+        </article>
+        <article>
+          <!-- educations -->
+
+          <div class="education-container">
+            <button id="addEducation">
+              <h2>Educations</h2>
+              <i class="bi bi-plus"></i>
+            </button>
+            <ul id="educationList" class="education-list-parent hidden">
+              <li class="edu-list">
+                <figure class="ums"></figure>
+                <div>
+                  <h3>University of Malaysia Sabah</h3>
+                  <h4>
+                    Bachelor's Degree in Science with Honours <br />(Physics
+                    with Electronics)
+                  </h4>
+                </div>
+              </li>
+              <li class="edu-list">
+                <figure class="sdar"></figure>
+                <div>
+                  <h3>Sekolah Dato' Abdul Razak</h3>
+                  <h4>Sijil Pelajaran Malaysia (SPM)</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- work experiences -->
+
+          <div class="experience-container">
+            <button id="addExperience">
+              <h2>Work Experiences</h2>
+              <i class="bi bi-plus"></i>
+            </button>
+            <ul
+              id="experienceList"
+              style="display: none"
+              class="experience-list-parent"
+            >
+              <li class="exp-list">
+                <div>
+                  <div>
+                    <h3>Oct 22 - Aug 23</h3>
+                    <h4>Project Administrator - Pipeline</h4>
+                    <h5>Carimin-iDrill Joint Venture</h5>
+                  </div>
+                  <div>
+                    <h5>Banting, Selangor</h5>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    Organized and executed events of varying sizes, mananging
+                    budget, logistics, vendors, timelines, and delivering
+                    exceptional attendee experiences
+                  </li>
+                  <li>
+                    Expertly maintain company vehicles for optimal performance
+                    and proactively address maintenance needs
+                  </li>
+                  <li>
+                    Manage and reconcile petty cash, maintain records, prepare
+                    reports, and ensure compliance with financial policies and
+                    procedures
+                  </li>
+                  <li>
+                    Prepare daily progress reports, highlighting achievements,
+                    challenges, and areas needing attention
+                  </li>
+                  <li>
+                    Create monthly progress video, showcasing accomplishments
+                    and objectives achieced within set timelines
+                  </li>
+                </ul>
+              </li>
+              <li class="exp-list">
+                <div>
+                  <div>
+                    <h3>Mar - Sept 21</h3>
+                    <h4>Research Assistant</h4>
+                    <h5>Computational Material Lab, UMS</h5>
+                  </div>
+                  <div>
+                    <h5>Kota Kinabalu, Sabah</h5>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    Designed and developed an automated sanitizing machine using
+                    3D Builder technology
+                  </li>
+                  <li>
+                    Identified and sourced necessary materials and products for
+                    the project, demonstrating strong research and procurement
+                    skills
+                  </li>
+                  <li>
+                    Expertly installed and maintained laboratory equipment,
+                    including computers and air-conditioning unitss
+                  </li>
+                  <li>
+                    Started conducting research on enhancing the performance of
+                    natural dye-sensitized solar cells (n-DSSCs), showcasing a
+                    passion for advancing scientific knowledge
+                  </li>
+                </ul>
+              </li>
+              <li class="exp-list">
+                <div>
+                  <div>
+                    <h3>Feb - Aug 20</h3>
+                    <h4>Intern - Web Developer</h4>
+                    <h5>Seagate International (Johor) Sdn Bhd</h5>
+                  </div>
+                  <div>
+                    <h5>Senai, Johor</h5>
+                  </div>
+                </div>
+                <ul>
+                  <li>
+                    Possess 8 months of professional experience working with
+                    .NET, C#, and HTML5
+                  </li>
+                  <li>
+                    Demonstrated problem-solving skills by reverse-engineering
+                    an outdated user interface and identifying all relevant
+                    fields, ultimately producing a set of UI templates
+                  </li>
+                  <li>
+                    Successfully developed a new, modern user interface for the
+                    department using HTML5, CSS, jQuery (including Ajax call and
+                    DataTable), and Chart JS
+                  </li>
+                  <li>
+                    Created sample UI models for a new application to ensure a
+                    streamlined and user-friendly experience for userse
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </main>
+    </section>
+
+    <!-- section-3 -->
+
+    <section id="projects" class="section section-3">
+      <h1>Projects</h1>
+      <div class="project-container">
+        <div class="project-selection">
+          <button class="project-btn btn-active" onclick="showProject(1)">
+            Project 1
+          </button>
+          <button class="project-btn" onclick="showProject(2)">
+            Project 2
+          </button>
+          <button class="project-btn" onclick="showProject(3)">
+            Project 3
+          </button>
+          <!-- Add more buttons for additional projects -->
+          <button class="project-btn" onclick="showProject(4)">
+            Project 4
+          </button>
+          <button class="project-btn" onclick="showProject(5)">
+            Project 5
+          </button>
+          <button class="project-btn" onclick="showProject(6)">
+            Project 6
+          </button>
+          <button class="project-btn" onclick="showProject(7)">
+            Project 7
+          </button>
+          <button class="project-btn" onclick="showProject(8)">
+            Project 8
+          </button>
+          <button class="project-btn" onclick="showProject(9)">
+            Project 9
+          </button>
+          <button class="project-btn" onclick="showProject(10)">
+            Project 10
+          </button>
+          <button class="project-btn" onclick="showProject(11)">
+            Project 11
+          </button>
+          <button class="project-btn" onclick="showProject(12)">
+            Project 12
+          </button>
+        </div>
+        <div class="project-display">
+          <!-- prev button -->
+
+          <button class="prev-btn" onclick="plusSlides(-1)">&#10094;</button>
+
+          <!-- project-1 -->
+
+          <div class="project-slide" id="project1" style="display: block">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 1 - HTML Resume</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-1/tree/main/exercise"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This project is my resume in form of HTML. This is made purely
+                  out of HTML
+                </p>
+              </div>
+            </div>
+            <a href="https://github.com/aqifbashah/day-1" target="_blank">
+              <img
+                src="assets/project-1-screenshot-1.png"
+                alt="Project 1 Screenshot 1"
+              />
+            </a>
+          </div>
+
+          <!-- project-2 -->
+
+          <div class="project-slide" id="project2">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 2 - Landing Page 1</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-3/tree/main/exercise"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This project is a landing page from Figma. Objective of this
+                  project is so that I'm familiar with CSS.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-3/tree/main/exercise"
+              target="_blank"
+            >
+              <img
+                src="assets/project-2-screnshot-1.png"
+                alt="Project 2 Screenshot 1"
+              />
+            </a>
+          </div>
+
+          <!-- project-3 -->
+          <div class="project-slide" id="project3">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 3 - Landing Page 2 (Norway)</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-4/tree/main/exercise"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This project is a landing page from Figma with theme of Travel
+                  to Norway. This project also for getting myself more familiar
+                  with CSS with addition of flex box.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-4/tree/main/exercise"
+              target="_blank"
+            >
+              <img
+                src="assets/project-3-screenshot-3.png"
+                alt="Project 3 Screenshot 1"
+              />
+            </a>
+          </div>
+
+          <!-- project-4 -->
+
+          <div class="project-slide" id="project4">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 4 - Landing Page 3 (Mercedes)</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-5/tree/main/exercise/exercise-1"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This project is a landing page from Figma with theme of
+                  Selling Car Website. This project help me get familiar with
+                  web responsiveness. When the width is change to smaller size,
+                  it will change the layout of the website.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-5/tree/main/exercise/exercise-1"
+              target="_blank"
+            >
+              <img
+                src="assets/project-4-screenshot-1.png"
+                alt="Project 4 Screenshot 1"
+              />
+            </a>
+            <a
+              href="https://github.com/aqifbashah/day-5/tree/main/exercise/exercise-1"
+              target="_blank"
+            >
+              <img
+                src="assets/project-4-screenshot-2.png"
+                alt="Project 4 Screenshot 2"
+              />
+            </a>
+          </div>
+
+          <!-- project-5 -->
+
+          <div class="project-slide" id="project5">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 5 - Landing Page 4 (Digital Agency)</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-5/tree/main/exercise/exercise-2"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This project is a landing page from Figma with theme of
+                  Digital Agency. Same with Landing page 3, this help me get
+                  familiar with web responsiveness to different screen size.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-5/tree/main/exercise/exercise-2"
+              target="_blank"
+            >
+              <img
+                src="assets/project-5-screenshot-1.png"
+                alt="Project 5 Screenshot 1"
+              />
+            </a>
+            <a
+              href="https://github.com/aqifbashah/day-5/tree/main/exercise/exercise-2"
+              target="_blank"
+            >
+              <img
+                src="assets/project-5-screenshot-2.png"
+                alt="Project 5 Screenshot 2"
+              />
+            </a>
+          </div>
+
+          <!-- project-6 -->
+
+          <div class="project-slide" id="project6">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 6 - BMI Calculator</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-7/tree/main/exercise"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This project is a BMI Calculator using Javascript. It send an
+                  alert to the user to fill in their weight in kilograms, then
+                  to fill in their height in meter. The script will calculate
+                  their BMI and show the result, also show their BMI Category.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-7/tree/main/exercise"
+              target="_blank"
+            >
+              <img
+                src="assets/project-6-screenshot-1.png"
+                alt="Project 6 Screenshot 1"
+              />
+            </a>
+          </div>
+
+          <!-- project-7 -->
+
+          <div class="project-slide" id="project7">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 7 - Pacman</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-8/tree/main/assessment/assessment-1"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This is pacman, as you can see, the yellow circle can move
+                  around the grid using the button on screen or using keyboard.
+                  This use Event Listener in the script and manipulate the CSS
+                  to make the yellow circle move around, there is also
+                  boundaries so the 'pacman' cannot go out of the box.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-8/tree/main/assessment/assessment-1"
+              target="_blank"
+            >
+              <img
+                src="assets/project-7-screenshot-1.png"
+                alt="Project 7 Screenshot 1"
+              />
+            </a>
+          </div>
+
+          <!-- project-8 -->
+
+          <div class="project-slide" id="project8">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 8 - Key Logger</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-8/tree/main/assessment/assessment-2"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This is a Key Logger. It shows the key pressed diretories
+                  using Javascript. It use event listener to the key pressed on
+                  the keyboard and display it's informations.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-8/tree/main/assessment/assessment-2"
+              target="_blank"
+            >
+              <img
+                src="assets/project-8-screenshot-1.png"
+                alt="Project 8 Screenshot 1"
+              />
+            </a>
+          </div>
+
+          <!-- project-9 -->
+
+          <div class="project-slide" id="project9">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 9 - Photo Gallery</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-10/tree/main/assessment/photo-slides"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This is a Photo Gallery, it showcase the photos stored in
+                  assets and make it auto slide for interval of 6 seconds. When
+                  the button is pressed it resets the timer. The background
+                  follows what is displayed to make it prettier.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-10/tree/main/assessment/photo-slides"
+              target="_blank"
+            >
+              <img
+                src="assets/project-9-screenshot-1.png"
+                alt="Project 9 Screenshot 1"
+              />
+            </a>
+          </div>
+
+          <!-- project-10 -->
+
+          <div class="project-slide" id="project10">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 10 - Web Nav Bar</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-10/tree/main/assessment/web-header"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This is Web Nav Bar, this project is focused on how to make
+                  the navigation bar slides in or out when the button is
+                  pressed. The nav bar also close when outside of the nav bar is
+                  pressed.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-10/tree/main/assessment/web-header"
+              target="_blank"
+            >
+              <img
+                src="assets/project-10-screenshot-1.png"
+                alt="Project 10 Screenshot 1"
+              />
+            </a>
+          </div>
+
+          <!-- project-11 -->
+
+          <div class="project-slide" id="project11">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 11 - To Do List</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-10/tree/main/assessment/to-do-list"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  As the name suggest, this project is a to do list. User add
+                  more task in the to do list, but prevented to write nothing or
+                  null value. User can also clear all the task by pressing the
+                  Clear All button, and also can tick when a certain task is
+                  done.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-10/tree/main/assessment/to-do-list"
+              target="_blank"
+            >
+              <img
+                src="assets/project-11-screenshot-1.png"
+                alt="Project 11 Screenshot 1"
+              />
+            </a>
+          </div>
+
+          <!-- project-12 -->
+
+          <div class="project-slide" id="project12">
+            <div class="project-descriptions">
+              <div>
+                <h3>Project 12 - Dictionary App</h3>
+                <a
+                  href="https://github.com/aqifbashah/day-11/tree/main/assessment"
+                  target="_blank"
+                  ><i class="bi bi-journal-bookmark"></i> Github Repositories
+                </a>
+              </div>
+              <div>
+                <h4>Description</h4>
+                <p>
+                  This is a Dictionary App, this project help me get familiar on
+                  how to use APIs. This app use dictionary API available online.
+                  When user input a recognizable word, it shows the meanings and
+                  audio file to how that word is pronouce.
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://github.com/aqifbashah/day-11/tree/main/assessment"
+              target="_blank"
+            >
+              <img
+                src="assets/project-12-screenshot-1.png"
+                alt="Project 12 Screenshot 1"
+              />
+            </a>
+          </div>
+
+          <!-- next button -->
+
+          <button class="next-btn" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+
+        <!-- dots-indicators -->
+
+        <div class="dot-indicators">
+          <span class="dot dot-active" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+          <span class="dot" onclick="currentSlide(10)"></span>
+          <span class="dot" onclick="currentSlide(11)"></span>
+          <span class="dot" onclick="currentSlide(12)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-4 -->
+
+    <section id="skills" class="section section-4">
+      <h1>Skills</h1>
+      <div class="skills-container">
+        <div class="skill">
+          <figure class="skill-logo">
+            <img src="./assets/skills-logo/html-logo.png" alt="html logo" />
+          </figure>
+          <h3>HTML</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+        <div class="skill">
+          <figure class="skill-logo">
+            <img src="./assets/skills-logo/css-logo.png" alt="css logo" />
+          </figure>
+          <h3>CSS</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+        <div class="skill">
+          <figure class="skill-logo">
+            <img
+              src="./assets/skills-logo/javascript-logo.png"
+              alt="Javascript logo"
+            />
+          </figure>
+          <h3>JavaScript</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+        <div class="skill">
+          <figure class="skill-logo">
+            <img src="./assets/skills-logo/python-logo.png" alt="python logo" />
+          </figure>
+          <h3>Python</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+        <div class="skill">
+          <figure class="skill-logo">
+            <img src="./assets/skills-logo/c++-logo.png" alt="c++ logo" />
+          </figure>
+          <h3>C++</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+        <div class="skill">
+          <figure class="skill-logo">
+            <img src="./assets/skills-logo/words-logo.png" alt="words logo" />
+          </figure>
+          <h3>Words</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+        <div class="skill">
+          <figure class="skill-logo">
+            <img src="./assets/skills-logo/excel-logo.png" alt="Excel logo" />
+          </figure>
+          <h3>Excel</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+        <div class="skill">
+          <figure class="skill-logo">
+            <img
+              src="./assets/skills-logo/powerpoint-logo.png"
+              alt="PowerPoint logo"
+            />
+          </figure>
+          <h3>PowerPoint</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+        <div class="skill">
+          <figure class="skill-logo">
+            <img
+              src="./assets/skills-logo/photoshop-logo.png"
+              alt="photoshop logo"
+            />
+          </figure>
+          <h3>Photoshop</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+        <div class="skill">
+          <figure class="skill-logo">
+            <img
+              src="./assets/skills-logo/illustator-logo.png"
+              alt="illustator logo"
+            />
+          </figure>
+          <h3>Illustrator</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+        <div class="skill">
+          <figure class="skill-logo">
+            <img
+              src="./assets/skills-logo/premierpro-logo.png"
+              alt="premier pro logo"
+            />
+          </figure>
+          <h3>Premier Pro</h3>
+          <div class="rating">
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star-fill"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+            <span class="star"><i class="bi bi-star"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section-5 -->
+
+    <section id="contact" class="section section-5">
+      <h1>Contact page</h1>
+      <div class="contact-container">
+        <div class="platform">
+          <div>
+            <h3>LinkedIn</h3>
+            <h4>Working Experience</h4>
+          </div>
+          <i class="bi bi-linkedin"></i>
+        </div>
+        <div class="platform">
+          <div>
+            <h3>Github</h3>
+            <h4>Code Repositories</h4>
+          </div>
+          <i class="bi bi-github"></i>
+        </div>
+        <div class="platform">
+          <div>
+            <h3>X</h3>
+            <h4>Random Stuffs</h4>
+          </div>
+          <i class="bi bi-twitter-x"></i>
+        </div>
+        <div class="platform"" >
+        <div>
+          <h3>E-Mail</h3>
+          <h4>aqifbashah@gmail.com</h4>
+        </div>
+        <i class="bi bi-envelope"></i>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+      <p>Made with love by Aqif Bashah</p>
+    </footer>
+  </body>
+</html>
