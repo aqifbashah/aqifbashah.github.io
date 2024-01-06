@@ -691,4 +691,8 @@ footer {
     width: 100%;
     left: 0;
   }
+
+  .project-selection {
+    padding: 20px;
+  }
 }
