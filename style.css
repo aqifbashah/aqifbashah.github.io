@@ -618,6 +618,11 @@ header > button {
   align-items: center;
   padding: 30px;
   flex-wrap: wrap-reverse;
+  text-decoration: none;
+}
+
+.platform:hover {
+  background: rgba(139, 139, 139, 0.345);
 }
 
 .bi-linkedin,

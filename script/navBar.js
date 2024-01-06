@@ -2,10 +2,6 @@ let btnContainer = document.querySelector("#links");
 let btns = btnContainer.getElementsByClassName("link");
 let sections = document.querySelectorAll(".section");
 
-function clickButton(link) {
-  window.open(link, "_blank");
-}
-
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function () {
     let current = document.getElementsByClassName("navbar-active");
