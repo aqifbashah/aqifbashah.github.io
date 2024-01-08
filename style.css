@@ -297,7 +297,7 @@ header > button {
 }
 
 .education-list-parent {
-  overflow: hidden;
+  overflow: scroll;
   height: 0;
   transition: height 0.5s ease;
 }
@@ -675,6 +675,16 @@ footer {
     width: 100%;
   }
 
+  .education-container,
+  .experience-container {
+    width: 100%;
+  }
+
+  .visible {
+    height: auto; /* Adjust to the preferred height of the content */
+    opacity: 1;
+  }
+
   .project-selection {
     display: flex;
     flex-wrap: wrap;
@@ -708,7 +718,7 @@ footer {
   }
 
   .platform {
-    width: 45%;
+    width: 47%;
     height: auto;
   }
 
